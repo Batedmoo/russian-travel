@@ -1,8 +1,34 @@
 .place {
   display: grid;
-  grid-template-columns: minmax(460px, 1fr) minmax(min-content, max-content);
-  grid-template-rows: minmax(min-content, max-content) minmax(460px, 1fr);
-  row-gap: 48px;
-  max-width: 984px;
+  grid-template-columns: 460px auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title website"
+    "image paragraphs";
   column-gap: 40px;
+  row-gap: 48px;
+}
+
+@media screen and (max-width: 1024px) {
+  .place {
+    grid-template-columns: 440px auto;
+    grid-template-rows: 1fr auto;
+    column-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    grid-template-columns: 340px auto;
+    grid-template-rows: 1fr auto;
+    column-gap: 28px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
 }
