@@ -12,4 +12,4 @@
 
 **Ссылка на проект**
 
-\https://batedmoo.github.io/russian-travel/
+- [Смотреть проект](https://batedmoo.github.io/russian-travel/)
